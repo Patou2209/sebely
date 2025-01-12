@@ -1,0 +1,388 @@
+/* Modifications pour les unités relatives et responsive design */
+
+p {
+    padding: 1%; /* Ajouter un padding de 1% à tous les paragraphes */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre toute la barre de navigation */
+    flex-wrap: wrap; /* Permet aux boutons de passer à la ligne si nécessaire */
+    padding: 1rem;
+    background-color: transparent;
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Espacement relatif réduit pour les petits écrans */
+    padding: 1rem;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Autorise le passage des éléments sur plusieurs lignes */
+}
+
+.nav button {
+    flex: 1 1 auto; /* Les boutons s'étirent pour remplir l'espace disponible */
+    max-width: 200px; /* Largeur maximale pour garder des tailles raisonnables */
+    padding: 0.5rem 1rem; /* Ajout d'un padding interne flexible */
+    margin: 0.5rem; /* Marges entre les boutons */
+    border: none;
+    background-color: #110149;
+    color: #fff;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
+    border-radius: 0.5rem;
+    text-align: center;
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
+
+.nav button:hover {
+    background-color: #fff;
+    color: #110149;
+}
+
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Hauteur relative à l'écran */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#titre1 {
+    width: 100%;
+    font-size: 3rem; /* Taille de police relative */
+    margin: 0;
+    color: #fff;
+}
+
+.header button {
+    margin-top: 2rem;
+    letter-spacing: 0.2rem;
+    background-color: #25793a;
+    text-decoration: none;
+}
+
+.left {
+    width: 55%;
+    padding: 1rem;
+    background-color: transparent;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.wel {
+    font-size: 1.5rem;
+}
+
+.right {
+    width: 30%;
+    padding-top: 2rem;
+    padding-right: 0;
+    background-color: transparent;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    justify-content: center;
+    border: #191550;
+    margin-right: 5vw;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+p span {
+    color: #110149;
+    letter-spacing: 0.2rem;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.section2, .section3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    align-items: center;
+    gap: 2rem; /* Réduit l'espacement pour éviter les chevauchements */
+    padding: 2rem;
+    background-color: #f2f2f2;
+    margin: 0 auto; /* Centre les sections horizontalement */
+}
+
+.section2 .left2, .section2 .right2, .section2 .left1,
+.section3 .left3, .section3 .right3 {
+    flex: 1 1 calc(33.33% - 2rem); /* Les éléments prennent chacun un tiers de la largeur, moins l'espacement */
+    max-width: 300px; /* Largeur maximale des éléments */
+    text-align: center;
+}
+
+/* Gestion des petits écrans */
+@media (max-width: 768px) {
+    .section2, .section3 {
+        flex-direction: column; /* Les éléments passent en colonne sur petits écrans */
+        gap: 1rem; /* Réduit l'espacement entre les éléments */
+    }
+
+    .section2 .left2, .section2 .right2, .section2 .left1,
+    .section3 .left3, .section3 .right3 {
+        flex: 1 1 100%; /* Les éléments prennent toute la largeur */
+        max-width: none; /* Annule la largeur maximale */
+    }
+}
+
+
+.footer {
+    position: relative;
+    align-items: center;
+    background-color: #110149;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer i {
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.footer hr {
+    width: 10%;
+    height: 0.1rem;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.footer-home {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.top {
+    position: fixed; /* Maintient la position fixe */
+    top: 0;
+    width: 100%; /* Prend toute la largeur de l'écran */
+    text-align: center; /* Centre le contenu horizontalement */
+}
+
+.top img {
+    width: 10vw;
+    height: auto; /* Garde les proportions de l'image */
+    object-fit: cover; /* Ajuste l'image */
+    margin: 0 auto; /* Centre automatiquement si besoin */
+}
+
+
+
+.bt {
+    width: 15vw;
+    height: 4rem;
+    letter-spacing: 0.2rem;
+    padding: 0;
+    margin: 0 5vw;
+    border: none;
+    background-color: #25793a;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.bt:hover {
+    background-color: #fff;
+    color: #0f0f0f;
+}
+
+.serv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+}
+
+.btn {
+    width: 100%;
+    height: 3rem;
+    letter-spacing: 0%;
+    padding: 0;
+    margin: 0 auto;
+    border: none;
+    background-color: #110149;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #110149;
+}
+
+/* Slideshow responsive */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4;} 
+    to {opacity: 1;}
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header {
+        height: 30vh;
+    }
+
+    .w3-display-middle h1 {
+        font-size: 2rem;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .slideshow-container {
+        width: 100%;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav button {
+        margin: 1rem 0;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .footer-home {
+        position: static;
+        margin-bottom: 1rem;
+    }
+
+    .top img {
+        position: static;
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Passe les boutons à la verticale pour les petits écrans */
+        gap: 0.5rem;
+    }
+
+    .nav button {
+        flex: none; /* Empêche les boutons de s'étirer */
+        width: 90%; /* Les boutons prennent presque toute la largeur */
+        max-width: none;
+    }
+}
+/* iPhone SE */
+@media only screen and (max-width: 320px) {
+    /* Styles pour iPhone SE */
+  }
+  
+  /* iPhone 12 / 13 Mini */
+  @media only screen and (max-width: 375px) {
+    /* Styles pour iPhone 12/13 Mini */
+  }
+  
+  /* iPhone 12 / 13 / 14 */
+  @media only screen and (max-width: 390px) {
+    /* Styles pour iPhone 12/13/14 */
+  }
+  
+  /* iPhone 14 Pro Max */
+  @media only screen and (max-width: 430px) {
+    /* Styles pour iPhone 14 Pro Max */
+  }
+  
+  /* Samsung Galaxy S8/S9/S10/S20 */
+  @media only screen and (max-width: 360px) {
+    /* Styles pour Samsung Galaxy S8/S9/S10/S20 */
+  }
+  
+  /* Samsung Galaxy Note 10/20 */
+  @media only screen and (max-width: 412px) {
+    /* Styles pour Samsung Galaxy Note 10/20 */
+  }
+  
+  /* iPad Mini */
+  @media only screen and (max-width: 768px) {
+    /* Styles pour iPad Mini */
+  }
+  
+  /* iPad Air/Pro (Portrait) */
+  @media only screen and (max-width: 834px) {
+    /* Styles pour iPad Air/Pro en mode Portrait */
+  }
+  
+  /* iPad Air/Pro (Landscape) */
+  @media only screen and (max-width: 1112px) {
+    /* Styles pour iPad Air/Pro en mode Paysage */
+  }
+  
+  /* Small Laptops (13") */
+  @media only screen and (max-width: 1280px) {
+    /* Styles pour petits ordinateurs portables */
+  }
+  
+  /* Desktops (Standard) */
+  @media only screen and (max-width: 1440px) {
+    /* Styles pour écrans d'ordinateurs standard */
+  }
+  
+  /* Ultra-Wide Screens */
+  @media only screen and (max-width: 2560px) {
+    /* Styles pour écrans ultra larges */
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles pour tablettes */
+  }
+    
