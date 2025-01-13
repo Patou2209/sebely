@@ -4,47 +4,6 @@ p {
     padding: 1%; /* Ajouter un padding de 1% à tous les paragraphes */
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centre toute la barre de navigation */
-    flex-wrap: wrap; /* Permet aux boutons de passer à la ligne si nécessaire */
-    padding: 1rem;
-    background-color: transparent;
-}
-
-
-.nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem; /* Espacement relatif réduit pour les petits écrans */
-    padding: 1rem;
-    background-color: #f2f2f2;
-    margin: 0 auto;
-    flex-wrap: wrap; /* Autorise le passage des éléments sur plusieurs lignes */
-}
-
-.nav button {
-    flex: 1 1 auto; /* Les boutons s'étirent pour remplir l'espace disponible */
-    max-width: 200px; /* Largeur maximale pour garder des tailles raisonnables */
-    padding: 0.5rem 1rem; /* Ajout d'un padding interne flexible */
-    margin: 0.5rem; /* Marges entre les boutons */
-    border: none;
-    background-color: #110149;
-    color: #fff;
-    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
-    border-radius: 0.5rem;
-    text-align: center;
-    white-space: nowrap; /* Empêche le texte de passer à la ligne */
-}
-
-.nav button:hover {
-    background-color: #fff;
-    color: #110149;
-}
-
 
 .header {
     position: relative;
@@ -74,10 +33,21 @@ p {
 }
 
 .header button {
-    margin-top: 2rem;
-    letter-spacing: 0.2rem;
-    background-color: #25793a;
+    margin-top: 7rem;
+    letter-spacing: 0rem;
+    background-color: #110149;
     text-decoration: none;
+    font-size: 1vw;
+    color: #fff;
+    border: 0.2vw solid #110149;
+    column-gap: normal;
+    border-radius: 0.5rem;
+}
+
+.header button:hover {
+    background-color: #fff; /* Couleur de fond au survol */
+    color: #110149; /* Couleur du texte au survol */
+    border: 0.1vw solid #110149; /* Ajouter une bordure au survol */   
 }
 
 .left {
@@ -159,16 +129,20 @@ p span {
     align-items: center;
     background-color: #110149;
     color: #fff;
-    font-size: 1rem;
+    font-size: 0.65rem; /* Réduire la taille de la police */
     text-align: center;
-    padding: 2rem;
+    padding: 1rem; /* Réduire le padding */
 }
 
 .footer i {
-    font-size: 1.2rem;
-    margin: 0 1rem;
+    font-size: 1rem; /* Réduire la taille des icônes */
+    margin: 0 0.5rem; /* Réduire l'espacement entre les icônes */
     color: #fff;
-    margin-top: 1rem;
+    margin-top: 0.5rem; /* Réduire l'espacement au-dessus des icônes */
+}
+
+.footer p {
+    margin: 0.5rem 0; /* Réduire l'espacement entre les paragraphes */
 }
 
 .footer hr {
