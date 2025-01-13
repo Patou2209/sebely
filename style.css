@@ -44,6 +44,8 @@ p {
 }
 
 .neutre button{
+    width: 100%;
+    height: auto;
     margin-top: 0rem;
     letter-spacing: 0rem;
     background-color: #110149;
