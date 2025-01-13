@@ -179,7 +179,7 @@ p span {
 }
 
 .top img {
-    width: 20%;
+    width: 15%;
     height: auto; /* Garde les proportions de l'image */
     object-fit: cover; /* Ajuste l'image */
     margin: 0 auto; /* Centre automatiquement si besoin */
