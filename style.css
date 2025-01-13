@@ -27,12 +27,15 @@ p {
 
 #titre1 {
     width: 100%;
-    font-size: 3rem; /* Taille de police relative */
-    margin: 0;
+    font-size: 1.5rem; /* Taille de police relative */
+    margin: 0; 
+    padding-top: 12vw;
     color: #fff;
 }
 
 .header button {
+    width: 11vw;
+    height: auto;
     margin-top: 7rem;
     letter-spacing: 0rem;
     background-color: #110149;
@@ -168,7 +171,7 @@ p span {
 }
 
 .top img {
-    width: 10vw;
+    width: 15vw;
     height: auto; /* Garde les proportions de l'image */
     object-fit: cover; /* Ajuste l'image */
     margin: 0 auto; /* Centre automatiquement si besoin */
