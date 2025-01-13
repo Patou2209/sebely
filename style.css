@@ -33,23 +33,21 @@ p {
     color: #fff;
 }
 
-.header button {
-    width: 30%;
-    height: auto;
-    margin-top: 7rem;
-    letter-spacing: 0rem;
+.btn {
+    width: 100%;
+    height: 3rem;
+    letter-spacing: 0%;
+    padding: 0;
+    margin: 0 auto;
+    border: none;
     background-color: #110149;
-    text-decoration: none;
-    font-size: 0.9rem;
     color: #fff;
-    column-gap: normal;
     border-radius: 0.5rem;
 }
 
-.header button:hover {
-    background-color: #fff; /* Couleur de fond au survol */
-    color: #110149; /* Couleur du texte au survol */
-    border: 0.1vw solid #110149; /* Ajouter une bordure au survol */   
+.btn:hover {
+    background-color: #fff;
+    color: #110149;
 }
 
 .left {
