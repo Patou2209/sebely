@@ -34,15 +34,14 @@ p {
 }
 
 .header button {
-    width: 15vw;
+    width: 30%;
     height: auto;
     margin-top: 7rem;
     letter-spacing: 0rem;
     background-color: #110149;
     text-decoration: none;
-    font-size: 1vw;
+    font-size: 0.9rem;
     color: #fff;
-    border: 0.2vw solid #110149;
     column-gap: normal;
     border-radius: 0.5rem;
 }
@@ -171,30 +170,13 @@ p span {
 }
 
 .top img {
-    width: 15vw;
+    width: 25%;
     height: auto; /* Garde les proportions de l'image */
     object-fit: cover; /* Ajuste l'image */
     margin: 0 auto; /* Centre automatiquement si besoin */
 }
 
 
-
-.bt {
-    width: 15vw;
-    height: 4rem;
-    letter-spacing: 0.2rem;
-    padding: 0;
-    margin: 0 5vw;
-    border: none;
-    background-color: #25793a;
-    color: #fff;
-    border-radius: 0.5rem;
-}
-
-.bt:hover {
-    background-color: #fff;
-    color: #0f0f0f;
-}
 
 .serv {
     display: flex;
