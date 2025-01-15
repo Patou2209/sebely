@@ -66,13 +66,13 @@ body {font-family: "Open Sans"}
     <div class="right">
         <div class="slideshow-container">
             <div class="mySlides fade">
-                <img src="data3.jpg" style="width: 100%; height: auto;">
+                <img src="site.jpg" style="width: 100%; height: auto;">
             </div>
             <div class="mySlides fade">
-                <img src="data2.jpg" style="width: 100%; height: auto;">
+                <img src="site.jpg" style="width: 100%; height: auto;">
             </div>
             <div class="mySlides fade">
-                <img src="data1.jpg" style="width: 100%; height: auto;">
+                <img src="site.jpg" style="width: 100%; height: auto;">
             </div>
         </div>
     </div>
@@ -119,7 +119,22 @@ body {font-family: "Open Sans"}
 <p class="top"> <img src="logo.png" alt="logo"></p>
 
 <!-- JavaScript for slideshow -->
+<script>
+    let slideIndex = 0;
+    showSlides();
 
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 4000); // Change image every 4 seconds
+    }
+</script>
 
 </body>
 </html>
