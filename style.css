@@ -194,27 +194,37 @@ p span {
 
 
 
-.serv {
+.serv1 {
+    width: 80%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.1rem;
-    padding: 1rem;
+    flex-wrap: wrap; /* Utiliser flex-wrap pour permettre l'enroulement */
+    justify-content: center; /* Centrer les boutons */
+    gap: 1rem; /* Ajuster l'espacement entre les boutons */
+    padding-top: 0rem; 
     background-color: #f2f2f2;
     margin: 0 auto;
+    margin-top: 0;
 }
 
 .btn {
-    width: 100%;
+    flex: 1 1 calc(33.33% - 2rem); /* Les boutons prennent chacun un tiers de la largeur, moins l'espacement */
     height: 3rem;
     letter-spacing: 0%;
     padding: 0;
-    margin: 0 auto;
+    margin: 0.5rem; /* Ajouter de la marge pour espacer les boutons */
     border: none;
     background-color: #110149;
     color: #fff;
     border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajouter de l'ombre */
+    transition: box-shadow 0.3s ease; /* Ajouter une transition pour l'ombre */
+}
+.section1 {
+    margin-bottom: 0; /* Réduire la marge en bas de la section précédente */
+}
+
+.header {
+    margin-bottom: 0; /* Réduire la marge en bas du header */
 }
 
 .btn:hover {
