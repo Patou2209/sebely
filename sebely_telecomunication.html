@@ -27,23 +27,21 @@ body {font-family: "Open Sans"}
       <h1 id="titre1">Datacenter & Telecommunication</h1>
     </div>
   </header>
+  <p>Leveraging our extensive knowledge and experience in ICT infrastructure, we propose tailored innovative solutions that meet the unique needs of each project. We offer a wide range of services from site due diligence to operation and maintenance (O&M).</p>
 
+  </b>
   <div class="section1 clearfix">
     <div class="left">
-        <p>Leveraging our extensive knowledge and experience in ICT infrastructure, we propose tailored innovative solutions that meet the unique needs of each project. We offer a wide range of services from site due diligence to operation and maintenance (O&M).</p>
-        <br>
         <h2 id="wel">Site Due Diligence</h2>
         <p>Our site due diligence service for data center projects is designed to ensure that your investment is strategically sound and future-ready. We conduct comprehensive assessments that include site analysis, risk assessment, regulatory compliance, and infrastructure assessment providing you with critical insights to make informed decisions. Our expert team collaborates closely with clients to identify potential risks and opportunities, ensuring that every site is optimized for performance, scalability, and sustainability. Trust us to lay the groundwork for your data center’s success.</p>
     </div>
     <!-- Slideshow section -->
     <div class="right">
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="site.jpg" style="width: 100%; height: auto;">
+        
+            <div >
+                <img src="datacenter.jpg" style="width: 100%; height: auto;">
             </div>
-        </div>
     </div>
-</div>
 
 <div class="section1 clearfix">
     <div class="left">
@@ -64,43 +62,25 @@ body {font-family: "Open Sans"}
     </div>
     <!-- Slideshow section -->
     <div class="right">
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="site.jpg" style="width: 100%; height: auto;">
-            </div>
-            <div class="mySlides fade">
-                <img src="site.jpg" style="width: 100%; height: auto;">
-            </div>
-            <div class="mySlides fade">
-                <img src="site.jpg" style="width: 100%; height: auto;">
-            </div>
+        <div >
+            <img src="datacenter.jpg" style="width: 100%; height: auto;">
         </div>
     </div>
 </div>
-
+<!--le balise clearfix est utiliser quand tu utilise un float , de peur que cela n'embrouille pas la suite du code, exemple en bas; ou on voit un contenaire section1 qui a deux div dont left et right-->
 <div class="section1 clearfix">
     <div class="left">
         <h2 id="wel">Facilities Management</h2>
         <p>Sebely provides a reliable, integrated management system that helps ensure safety, high availability and maximum energy efficiency of equipment in mission critical facilities. Our services include maintenance and monitoring of electrical, cooling, and fire systems, document management and achiving (diagrams, equipment labels, etc.), technical advisory, and so on.</p>
     </div>
-    <!-- Slideshow section -->
+    
     <div class="right">
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="background main.jpg" style="width: 100%; height: auto;">
+            <div >
+                <img src="datacenter.jpg" style="width: 100%; height: auto;">
             </div>
-            <div class="mySlides fade">
-                <img src="data3.jpg" style="width: 100%; height: auto;">
-            </div>
-            <div class="mySlides fade">
-                <img src="data2.jpg" style="width: 100%; height: auto;">
-            </div>
-        </div>
     </div>
 </div>
-
-</div>
-
+<br>
 <footer class="footer">
     <p>© 2025 Sebely. All Rights Reserved.</p>
     <p class="footer-home"><a href="index.html"><i class="fa fa-home"> H O M E </i></a></p>
@@ -118,23 +98,6 @@ body {font-family: "Open Sans"}
 </footer>
 <p class="top"> <img src="logo.png" alt="logo"></p>
 
-<!-- JavaScript for slideshow -->
-<script>
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        slides[slideIndex-1].style.display = "block";  
-        setTimeout(showSlides, 4000); // Change image every 4 seconds
-    }
-</script>
 
 </body>
 </html>
