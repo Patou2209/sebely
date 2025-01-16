@@ -2,7 +2,13 @@
 
 p {
     padding: 1%; /* Ajouter un padding de 1% à tous les paragraphes */
+    
 }
+.ok {
+    padding: 1%; /* Ajouter un padding de 1% à tous les paragraphes */
+    text-align: justify;
+}
+
 
 
 .header {
@@ -191,18 +197,18 @@ p span {
     color: #fff;
     font-size: 0.65rem; /* Réduire la taille de la police */
     text-align: center;
-    padding: 1rem; /* Réduire le padding */
+    padding: 0.65rem; /* Réduire le padding */
 }
 
 .footer i {
-    font-size: 1rem; /* Réduire la taille des icônes */
-    margin: 0 0.5rem; /* Réduire l'espacement entre les icônes */
+    font-size: 0.65rem; /* Réduire la taille des icônes */
+    margin: 0 0.3rem; /* Réduire l'espacement entre les icônes */
     color: #fff;
-    margin-top: 0.5rem; /* Réduire l'espacement au-dessus des icônes */
+    margin-top: 0.1rem; /* Réduire l'espacement au-dessus des icônes */
 }
 
 .footer p {
-    margin: 0.5rem 0; /* Réduire l'espacement entre les paragraphes */
+    margin: 0.3rem 0; /* Réduire l'espacement entre les paragraphes */
 }
 
 .footer hr {
