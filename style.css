@@ -126,6 +126,7 @@ p {
     justify-content: center;
     border: #191550;
     margin-right: 5vw;
+    margin-left: -1vw;
 }
 
 .clearfix::after {
