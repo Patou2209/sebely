@@ -160,6 +160,13 @@ p span {
     max-width: 300px; /* Largeur maximale des éléments */
     text-align: center;
 }
+.contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Gestion des petits écrans */
 @media (max-width: 768px) {
