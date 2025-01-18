@@ -194,6 +194,14 @@ p span {
     width: 100%;
     flex-wrap: wrap;
 }
+.adress2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    font-family:'Times New Roman', Times, serif ;
+    font-size: 0.90rem;
+}
 
 
 .footer {
