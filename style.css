@@ -507,7 +507,7 @@ body {
   /* about page style*/
 
  #page-header.about-header{
-    background-image: url("img/about/banner.png");
+    background-image: url("img/banner.png");
    }
   
    #about-head {
@@ -540,7 +540,7 @@ body {
   
    /* contact page styles */
    #page-header.contact{
-    background-image: url("img/about/banner.png");
+    background-image: url("img/banner.png");
    }
    #contact-details {
     display: flex;
