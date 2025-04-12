@@ -376,12 +376,13 @@ body {
     justify-content: center;
     align-items: center;
     width: 300px;
-    height: 250px;
+    height: 300px;
     border-radius: 20px;
     padding: 5px;
     margin-bottom: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
+    margin-bottom: 15px;
   }
   #pro-container .featured-box:hover{
     color: #307a5a;
@@ -397,8 +398,8 @@ body {
   }
   #pro-container .featured-box img{
     width: 100%;
-    height: 100%;
-    border-radius: 20px;
+    height: 90%;
+    border-radius: 10px;
     object-fit: cover;
   }
 
