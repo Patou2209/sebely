@@ -404,15 +404,20 @@ body {
   }
 
   #pro-container .featured-box h4{
-    color: #222;
+    color: #000;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 800;
     padding: 5px 0;
   }
   #pro-container .featured-box p{
     color: #888383;
     font-size: 13px;
     font-weight: 300;
+  }
+  #pro-container .featured-box span{
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
   }
   #newsletter{
     display: flex;
