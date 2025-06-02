@@ -49,6 +49,10 @@ p {
 .section-m1 {
   margin: 20px 0;
 }
+marquee{
+  font-weight: bold;
+  height: 30px;
+}
 button.normal{
   font-size: 14px;
   font-weight: 600;
