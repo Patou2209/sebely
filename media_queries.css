@@ -165,6 +165,15 @@
       
   }
 
+   @media(min-width: 1000px){
+    #pro-container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    align-items: center;
+    justify-items: center;
+  }
+   }
+
 /* Media queries, Tablettes */
 
 @media (max-width: 999px) {
