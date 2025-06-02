@@ -83,6 +83,12 @@
       background: rgba(0, 0, 0, 0.5); /* Superposition semi-transparente noire */
       z-index: 1; /* Place le pseudo-élément derrière le contenu */
     }
+    .slogan {
+    color: #307a5a;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
     #banner{
       height: 700px;
     }
