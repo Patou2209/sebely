@@ -168,11 +168,31 @@
    @media(min-width: 1000px){
     #pro-container{
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(310px, 1fr));
     align-items: center;
     justify-items: center;
+    gap: 15px;
   }
    }
+    #pro-container .featured-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    height: 280px;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin: 25px 0 25px 0;
+  }
+  #pro-container .featured-box img{
+    width: 95%;
+    height: 75%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
 
 /* Media queries, Tablettes */
 
