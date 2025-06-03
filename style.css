@@ -403,18 +403,15 @@ body {
     padding: 0 5px;
     margin-bottom: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
     margin-bottom: 20px;
   }
   #pro-container .featured-box:hover{
     color: #307a5a;
-    transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     cursor : pointer;
   }
   #pro-container .featured-box span:hover{
     color: #307a5a;
-    transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     cursor : pointer;
   }
