@@ -27,6 +27,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 1000); // Délai de 100ms pour s'assurer que l'animation démarre
   });
 
-
-
-      
+// Script for select language
+document.querySelectorAll('select#language').forEach(languageSelect => {
+    languageSelect.addEventListener('change', (event) => {
+        const selectedLanguage = event.target.value;
+        // Redirige l'utilisateur vers la version correspondante de la page
+        if (selectedLanguage === 'fr') {
+            window.location.href = 'index.html';
+        } else if (selectedLanguage === 'en') {
+            window.location.href = 'indexx_en.html';
+        } else if (selectedLanguage === '') {
+            window.location.href = 'index.html';
+        }
+    });
+});

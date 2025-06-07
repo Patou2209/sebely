@@ -175,6 +175,16 @@ body {
   bottom: -4px;
   left: 20px;
 }
+#language  {
+  padding: 5px;
+  font-size: 15px;
+  border: 1px solid #465b52;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #465b52;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
 
 .mobile{
   display: none;
