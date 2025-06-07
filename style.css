@@ -62,7 +62,8 @@ marquee{
   color: #307a5a;
   font-size: 20px;
   font-weight: bold;
-  margin: 15px 0;
+  margin: 15px 10px;
+  text-align: center;
 }
 button.normal{
   font-size: 14px;
