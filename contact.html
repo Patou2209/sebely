@@ -1,226 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact </title>
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="media_queries.css">
-        
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_queries.css">
+</head>
 
-    <body>
+<body>
 
-    <section id="header">
-        <a href="index.html"><img src="img/looogo.jpg" alt=""  class="logo"></a>
+<section id="header">
+    <a href="index.html"><img src="img/looogo.jpg" alt="" class="logo"></a>
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="solutions.html">Nos Solutions</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+    </div>
+    <div class="mobile">
+        <i id="bar" class="fas fa-outdent"></i>
+    </div>
+</section>
+
+<section id="page-header" class="contact">
+    <h2>Discutons</h2>
+    <h4 style="font-family: 'Satisfy', cursive !important;">Nous sommes là pour vous accompagner dans votre projet</h4>
+</section>
+
+<section id="contact-details" class="section-p1">
+    <div class="details">
+        <span>PRENEZ CONTACT ET</span><br>
+        <h3>Visitez notre siège</h3>
         <div>
-            <ul id="navbar">
-                <li><a  href="index.html">Home</a></li>
-                <li><a  href="solutions.html">Our Solutions</a></li>
-                <li><a  href="about.html">About</a></li>
-                <li><a class="active" href="contact.html">Contact</a></li>
-                <a href="#" id="close"><i class="far fa-times"></i></a>
-            </ul>
+            <li>
+                <i class="fal fa-map"></i>
+                <p>Appartement 1302, Tour CTC, 8778 Avenue Wagenia, Gombe, Kinshasa, RDC</p>
+            </li>
+            <li>
+                <i class="fas fa-envelope"></i>
+                <p>contact@sebely.com</p>
+            </li>
+            <li>
+                <i class="fas fa-phone-alt"></i>
+                <p>+243 840 931 102</p>
+            </li>
+            <li>
+                <i class="fal fa-clock"></i>
+                <p>Lundi à Vendredi : 8h00 à 17h00</p>
+            </li>
         </div>
-        <div class="mobile">
-            <i id="bar" class="fas fa-outdent"></i>
-            
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.597370739481!2d15.308942774089452!3d-4.298111846333761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a338a4052827b%3A0xc962ab2ab3fa5b9f!2s8778%20Ave%20Wagenia%2C%20Kinshasa%2C%20R%C3%A9publique%20d%C3%A9mocratique%20du%20Congo!5e0!3m2!1sfr!2sza!4v1744312218130!5m2!1sfr!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<section id="form-details">
+    <div id="alertBox" class="custom-alert"></div>
+    <form id="myForm">
+        <span>LAISSEZ UN MESSAGE</span>
+        <h2>Nous aimons avoir de vos nouvelles !</h2>
+        <input type="text" name="name" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <input type="text" name="subject" placeholder="Sujet" required>
+        <textarea name="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
+        <button type="submit" class="normal">Envoyer</button>
+    </form>
+
+    <div class="people">
+        <div>
+            <img src="img/looogo.jpg" alt="">
+            <p><span>Sebely SARLU</span> Société<br> Téléphone : +243 840 931 102 <br> Email : contact@sebely.com</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="page-header" class="contact">
-        <h2>Let's talk</h2>
-        <h4 style="font-family: 'Satisfy', cursive !important;">We are here to help you with your project</h4>
-        
-        
-    </section>
+<section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+        <h4>Abonnez-vous à notre newsletter</h4>
+        <p>Recevez des mises à jour par e-mail sur notre boutique et nos <span>offres spéciales</span>.</p>
+    </div>
+    <form id="newsletterForm" class="form">
+        <input type="email" name="email" placeholder="Votre adresse e-mail" required>
+        <button type="submit" class="normal">S'abonner</button>
+    </form>
+</section>
 
-    <section id="contact-details" class="section-p1">
-        <div class="details">
-            <span>GET IN TOUCH AND </span><br>
-            <h3>Visit our Head Office</h3>
-            <div>
-                <li>
-                    <i class="fal fa-map"></i>
-                    <p> Appartement 1302, CTC Tower,
-                        8778 Wagenia Street, Gombe, Kinshasa, DR Congo</p>
-                </li>
-                <li>
-                    <i class="fas fa-envelope"></i>
-                    <p>contact@sebely.com</p>
-                </li>
-                <li>
-                    <i class="fas fa-phone-alt"></i>
-                    <p>+243 840 931 102</p>
-                </li>
-                <li>
-                    <i class="fal fa-clock"></i>
-                    <p>Monday to Friday: 8.00am to 17.00pm</p>
-                </li>
+<footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="img/looogo.jpg" alt="" width="50px" height="50px">
+        <h4>Contact</h4>
+        <p><strong>Adresse :</strong> Appartement 1302, Tour CTC, 8778 Avenue Wagenia, Gombe, Kinshasa, RDC</p>
+        <p><strong>Téléphone :</strong> +243 840 931 102</p>
+        <p><strong>Horaires :</strong> 08:00 - 17:00, Lun - Ven</p>
+        <div class="follow">
+            <h4>Suivez-nous</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-youtube"></i>
             </div>
         </div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.597370739481!2d15.308942774089452!3d-4.298111846333761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a338a4052827b%3A0xc962ab2ab3fa5b9f!2s8778%20Ave%20Wagenia%2C%20Kinshasa%2C%20R%C3%A9publique%20d%C3%A9mocratique%20du%20Congo!5e0!3m2!1sfr!2sza!4v1744312218130!5m2!1sfr!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    
-    </section>
+    </div>
+    <div class="col">
+        <h4>À propos</h4>
+        <a href="about.html">Qui sommes-nous</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Conditions générales</a>
+        <a href="contact.html">Contactez-nous</a>
+    </div>
 
-    <section id="form-details">
-        <!-- Message personnalisé -->
-        <div id="alertBox" class="custom-alert"></div> <!-- Le Div reste vide parceque le code sera injecter via JavaScript dans alert apres envois du formulaire -->
-        <form id="myForm">
-            <span>LEAVE A MESSAGE</span>
-            <h2>We love to hear from you!</h2>
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <input type="text" name="subject" placeholder="Your subject" required>
-            <textarea name="message" cols="30" rows="10" placeholder="Your message" required></textarea>
-            <button type="submit" class="normal">Submit</button>
-        </form>
+    <div class="col install">
+        <h4>Installer l’application</h4>
+        <p>Depuis l’App Store ou Google Play</p>
+        <div class="row">
+            <img src="img/pay/app.jpg" alt="">
+            <img src="img/pay/play.jpg" alt="">
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025, Sebely. Tous droits réservés.</p>
+        <a href="https://wa.me/+27698089022"><p>Designé par <span>TECHNOWEB</span></p></a>
+    </div>
+</footer>
 
-        <div class="people">
-           <!-- <div>
-                <img src="img/looogo.jpg" alt="">
-                <p><span>Sebely RDC</span> Company<br> Phone: +243 840 931 102 <br> Email: contact@esebely.com</p>
-            </div>
-            <div>
-                <img src="img/looogo.jpg" alt="">
-                <p><span>Sebely S.A</span> Company<br> Phone: +243 840 931 102 <br> Email: contact@esebely.com</p>
-            </div>-->
-            <div>
-                <img src="img/looogo.jpg" alt="">
-                <p><span>Sebely SARLU</span> Company<br> Phone: +243 840 931 102 <br> Email: contact@sebely.com</p>
-            </div>
-        </div>
-    </section>
+<script src="script.js"></script>
+<script>
+    const form = document.getElementById('myForm');
+    const newsletterForm = document.getElementById('newsletterForm');
+    const alertBox = document.getElementById('alertBox');
 
-    <section id="newsletter" class="section-p1 section-m1">
-        <div class="newstext">
-            <h4>Sign Up for Newsletters</h4>
-            <p>Get E-mail updates about our latest shop and <span>special offers</span>.</p>
-        </div>
-        <form id="newsletterForm" class="form">
-            <input type="email" name="email" placeholder="Your email address" required>
-            <button type="submit" class="normal">Sign Up</button>
-        </form>
-    </section>
+    form.addEventListener('submit', async function (e) {
+        e.preventDefault();
 
-    <footer class="section-p1">
-        <div class="col">
-            <img class="logo" src="img/looogo.jpg" alt="" width="50px" height="50px">
-            <h4>Contact</h4>
-            <p><strong>Address:</strong> 
-                Appartement 1302, CTC Tower,
-                8778 Wagenia Street, Gombe, Kinshasa, DR Congo</p>
-            <p><strong>Phone:</strong> +243 840 931 102</p>
-            <p><strong>Hours:</strong> 08:00 - 17:00, Mon - Fri</p>
-            <div class="follow">
-                <h4>Follow us</h4>
-                <div class="icon">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-pinterest"></i>
-                    <i class="fab fa-youtube"></i>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <h4>About</h4>
-            <a href="about.html">About Us</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="contact.html">Contact Us</a>
-        </div>
-        
-        <div class="col install">
-            <h4>Install App</h4>
-            <p>From App Store or Google Play</p>
-            <div class="row">
-                <img src="img/pay/app.jpg" alt="">
-                <img src="img/pay/play.jpg" alt="">
-            </div>
-            
-        </div>
-        <div class="copyright">
-            <p>&copy; 2025, Sebely. All Rights Reserved.</p>
-            <a href="https://wa.me/+27698089022"><p>Designed by <span>TECHNOWEB</span></p></a>
-            
-        </div>
-    </footer>
-    <script src="script.js"></script>
-    <!--script pour la soumission des formulaires -->
-    <script>
-         const form = document.getElementById('myForm');
-        const newsletterForm = document.getElementById('newsletterForm');
-        const alertBox = document.getElementById('alertBox');
-      
-        form.addEventListener('submit', async function(e) {
-          e.preventDefault();
-      
-          const data = {
+        const data = {
             name: form.name.value,
             email: form.email.value,
             subject: form.subject.value,
             message: form.message.value
-          };
-      // <!--le lien en bas est mon lien fournis  pour submit le formulaire via Formspree, le compte email qui recois ce formulaire est mentionner dans le compte Formspree lors de la creation du new project-->
-          try {
+        };
+
+        try {
             const response = await fetch('https://formspree.io/f/xdkebjbl', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json'
-              },
-              body: JSON.stringify(data)
-            });
-      
-            if (response.ok) {
-              alertBox.textContent = "✅ Message sent successfully!";  // Message de succès (facultatif)
-              alertBox.className = "custom-alert";
-              alertBox.style.display = "block";
-              form.reset(); // Réinitialisation du formulaire
-      
-              setTimeout(() => {
-                window.location.href = "index.html"; // Redirection vers page de remerciement
-              }, 2000); // 2 secondes avant la redirection
-            } else {
-              throw new Error("Form submission failed");
-            }
-          } catch (error) {
-            alertBox.textContent = "❌ An error occurred. Please try again.";
-            alertBox.className = "custom-alert error";
-            alertBox.style.display = "block";
-          }
-        });
-
-        // Formulaire newsletter
-        newsletterForm.addEventListener('submit', async function(e) {
-            e.preventDefault();
-            const data = {
-            email: newsletterForm.email.value
-            };
-
-            try {
-            const response = await fetch('https://formspree.io/f/xdkebjbl', { // tu peux aussi créer un formspree spécifique à la newsletter
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
             });
 
             if (response.ok) {
-                alert("✅ Thank you for subscribing!");
+                alertBox.textContent = "✅ Message envoyé avec succès !";
+                alertBox.className = "custom-alert";
+                alertBox.style.display = "block";
+                form.reset();
+                setTimeout(() => {
+                    window.location.href = "index.html";
+                }, 2000);
+            } else {
+                throw new Error("Échec de l'envoi");
+            }
+        } catch (error) {
+            alertBox.textContent = "❌ Une erreur est survenue. Veuillez réessayer.";
+            alertBox.className = "custom-alert error";
+            alertBox.style.display = "block";
+        }
+    });
+
+    newsletterForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const data = { email: newsletterForm.email.value };
+
+        try {
+            const response = await fetch('https://formspree.io/f/xdkebjbl', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+
+            if (response.ok) {
+                alert("✅ Merci pour votre inscription !");
                 newsletterForm.reset();
             } else {
-                throw new Error("Subscription failed");
+                throw new Error("Échec de l'inscription");
             }
-            } catch (error) {
-            alert("❌ Error subscribing. Please try again later.");
-            }
-        });
-    </script>
-    </body>
+        } catch (error) {
+            alert("❌ Erreur lors de l'inscription. Veuillez réessayer plus tard.");
+        }
+    });
+</script>
 
+</body>
 </html>
