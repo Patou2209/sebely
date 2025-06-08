@@ -156,16 +156,23 @@ body {
   font-weight: 600;
   transition: 0.3s ease;
 }
-#navbar li a:hover {
+
+#navbar a:hover {
   color: #465b52;
   
 }
 #navbar li a:hover,
+#francais:hover,
+#english:hover {
+  color: #307a5a;
+}
 #navbar li a.active {
   color: #307a5a; 
 }
 
 #navbar li a.active::after,
+#francais .active::after,
+#english .active::after,
 #navbar li a:hover::after{
   content: "";
   width: 30%;
@@ -174,16 +181,6 @@ body {
   position: absolute;
   bottom: -4px;
   left: 20px;
-}
-#language  {
-  padding: 5px;
-  font-size: 15px;
-  border: 1px solid #465b52;
-  border-radius: 4px;
-  background-color: #fff;
-  color: #465b52;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
 }
 
 .mobile{
@@ -199,6 +196,17 @@ body {
 .mobile i:hover{
   color: #307a5a;
   background-color: #fff;
+}
+#span_gen{
+  color: rgb(3, 3, 112);
+  font-size: 12px;
+  font-weight: 600;
+  gap: 15px;
+}
+#span_gen2{
+  color: #465b52;
+  font-size: 12px;
+  font-weight: 600;
 }
 #close{
   display: none;

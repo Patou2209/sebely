@@ -53,7 +53,9 @@
       font-size: 20px;
       padding-left: 20px;
     }
-    
+    #span_gen2 {
+        display: none;
+      }
     #close{
       display: initial;
       position: absolute;
@@ -163,6 +165,9 @@
      #featured-page .featured-page-text{
       min-width : 100%;
     }
+    #span_gen2 {
+        display: none;
+      }
       
   }
 
@@ -452,6 +457,9 @@
       }
       .mobile i{
         font-size: 20px;
+      }
+      #span_gen2 {
+        display: none;
       }
 
       /* featured-page styles */
