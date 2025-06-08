@@ -41,3 +41,12 @@ document.querySelectorAll('select#language').forEach(languageSelect => {
         }
     });
 });
+
+// Script for activating the current language 
+const francais = document.querySelectorAll('.francais');
+francais.forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelectorAll('.francais').forEach(el => el.classList.remove('active'));
+        link.classList.add('active');
+    });
+});
