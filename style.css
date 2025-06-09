@@ -65,6 +65,10 @@ marquee{
   margin: 15px 10px;
   text-align: center;
 }
+.francais.active,
+.english.active {
+    color:orange; /* ou la couleur de ton choix */
+}
 button.normal{
   font-size: 14px;
   font-weight: 600;

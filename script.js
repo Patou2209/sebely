@@ -27,26 +27,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 1000); // Délai de 100ms pour s'assurer que l'animation démarre
   });
 
+
 // Script for select language
-document.querySelectorAll('select#language').forEach(languageSelect => {
-    languageSelect.addEventListener('change', (event) => {
-        const selectedLanguage = event.target.value;
-        // Redirige l'utilisateur vers la version correspondante de la page
-        if (selectedLanguage === 'fr') {
-            window.location.href = 'index.html';
-        } else if (selectedLanguage === 'en') {
-            window.location.href = 'indexx_en.html';
-        } else if (selectedLanguage === '') {
-            window.location.href = 'index.html';
-        }
+const francais = document.querySelectorAll('.francais');
+francais.forEach((element) => {
+    element.addEventListener('click', () => {
+      francais.forEach(el => el.classList.remove('active')); // retire 'active' partout
+        element.classList.add('active'); // ajoute 'active' à l'élément cliqué
+        window.location.href = 'index.html'; // redirection ici
     });
 });
-
-// Script for activating the current language 
-const francais = document.querySelectorAll('.francais');
-francais.forEach(el => {
-    el.addEventListener('click', () => {
-        francais.forEach(f => f.classList.remove('active')); // retire 'active' partout
-        el.classList.add('active'); // ajoute 'active' à l'élément cliqué
+const english = document.querySelectorAll('.english');
+english.forEach((element) => {
+    element.addEventListener('click', () => {
+    english.forEach(el => el.classList.remove('active')); // retire 'active' partout
+        element.classList.add('active'); // ajoute 'active' à l'élément cliqué
+         window.location.href = 'indexx_en.html'; // redirection ici
     });
 });
