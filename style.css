@@ -165,9 +165,7 @@ body {
   color: #465b52;
   
 }
-#navbar li a:hover,
-#francais:hover,
-#english:hover {
+#navbar li a:hover {
   color: #307a5a;
 }
 #navbar li a.active {
@@ -175,8 +173,6 @@ body {
 }
 
 #navbar li a.active::after,
-#francais .active::after,
-#english .active::after,
 #navbar li a:hover::after{
   content: "";
   width: 30%;
