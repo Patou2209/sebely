@@ -1,47 +1,51 @@
-// Script for navigation bar
-const bar = document.getElementById('bar');
-const close = document.getElementById('close');
-const nav = document.getElementById('navbar');
-
-if (bar) {
-    bar.addEventListener('click', () => {
-        nav.classList.add('active');
-    })
-}
-if (close) {
-    close.addEventListener('click', () => {
-        nav.classList.remove('active');
-    })
-}
-
-// Script for navigation bar slide in from left
-document.addEventListener("DOMContentLoaded", function () {
-    const header = document.getElementById("header");
-  
-    // Ajoute la classe "hidden" au chargement de la page
-    header.classList.add("hidden");
-  
-    // Retire la classe "hidden" après un délai pour déclencher l'animation
-    setTimeout(() => {
-      header.classList.remove("hidden");
-    }, 1000); // Délai de 100ms pour s'assurer que l'animation démarre
-  });
+// change navbar styles on scroll
+window.addEventListener('scroll', ()=> {
+  document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 0)
+})
 
 
-// Script for select language
-const francais = document.querySelectorAll('.francais');
-francais.forEach((element) => {
-    element.addEventListener('click', () => {
-      francais.forEach(el => el.classList.remove('active')); // retire 'active' partout
-        element.classList.add('active'); // ajoute 'active' à l'élément cliqué
-        window.location.href = 'index.html'; // redirection ici
+/////////// Toggle button
+
+let menu = document.querySelector('.nav_menu');
+let menuBtn = document.querySelector('#open-menu-btn')
+let closeBtn = document.querySelector('#close-menu-btn')
+
+menuBtn.addEventListener('click', () => {
+    menu.style.display = "flex";
+    closeBtn.style.display = "inline-block";
+    menuBtn.style.display = "none";
+
+})
+closeBtn.addEventListener('click', () => {
+    menu.style.display = "none";
+    menuBtn.style.display = "inline-block";
+    closeBtn.style.display = "none";
+
+})
+
+
+    // ==== Intersection Observer pour effet "lazy fade-in" ====
+
+    // Sélectionne tous les éléments que tu veux observer
+    const lazyElements = document.querySelectorAll(
+      "section, .container_solutions, .stat, .solution_texte, .solution_pic, .hero, nav, footer"
+    );
+
+    // Ajoute la classe de base
+    lazyElements.forEach(el => el.classList.add("lazy-element"));
+
+    // Crée un nouvel observateur
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("lazy-visible");
+          observer.unobserve(entry.target); // Stoppe l’observation une fois visible
+        }
+      });
+    }, {
+      threshold: 0.1, // Déclenche quand 10% de l’élément est visible
     });
-});
-const english = document.querySelectorAll('.english');
-english.forEach((element) => {
-    element.addEventListener('click', () => {
-    english.forEach(el => el.classList.remove('active')); // retire 'active' partout
-        element.classList.add('active'); // ajoute 'active' à l'élément cliqué
-         window.location.href = 'indexx_en.html'; // redirection ici
-    });
-});
+
+    // Observe chaque élément
+    lazyElements.forEach(el => observer.observe(el));
+  
