@@ -217,6 +217,9 @@ nav button {
   background-color: var(--color-bg2);
   color: var(--color-white);
 }
+.stats p{
+  text-align: center;
+}
 .impact-stats{
   display: flex;
   flex-wrap: wrap;
