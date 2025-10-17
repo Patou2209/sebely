@@ -152,12 +152,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 1) 0%,     /* en haut (blanc opaque) */
-    rgba(255, 255, 255, 0.5) 50%,  /* milieu (blanc semi-transparent) */
-    rgba(255, 255, 255, 0) 100%    /* en bas (transparent) */
-  );
+  background: transparent;
 
 }
 
