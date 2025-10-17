@@ -57,6 +57,7 @@ marquee{
   font-weight: bold;
   height: 30px;
   padding: 5px 0;
+  color: white;
 }
 .slogan {
   color: #307a5a;
@@ -70,8 +71,6 @@ marquee{
     color:orange; /* ou la couleur de ton choix */
 }
 .langue{
-  background-color: rgb(3, 3, 112);
-  border-top-left-radius: 7px;
   padding: 5px 10px;
   cursor: pointer;
 }
@@ -242,7 +241,6 @@ body {
   left: 0;
   width: 100%;
   height: 90vh;
-  background: rgba(0, 0, 0, 0.5); /* Superposition semi-transparente noire */
   z-index: 1; /* Place le pseudo-élément derrière le contenu */
 }
 
