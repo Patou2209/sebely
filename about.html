@@ -1,245 +1,207 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <!-- Encodage et compatibilité -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <!-- Affichage responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="pages.css">
+  <title>Sebely | A propos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <link href="https://fonts.cdnfonts.com/css/reey" rel="stylesheet">
+   <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   <!-- 🔹 DESCRIPTION (max 160 caractères pour Google) -->
+<meta name="description" content="Sebely est une entreprise d’ingénierie basée à Kinshasa (RDC), spécialisée en construction industrielle, data centers, power systems, fire systems et consultance technique.">
 
-    <!-- Meta titre pour SEO -->
-    <title>Sebely | À propos</title>
+<!-- 🔹 MOTS-CLÉS ciblés pour référencement -->
+<meta name="keywords" content="Sebely, Ingénierie RDC, entreprise de construction Kinshasa, Data Center RDC, Fire System, Power System, énergie, consultance technique, ingénierie industrielle, infrastructure technologique, supervision et maintenance, efficacité énergétique, Sebely Engineering">
 
-    <!-- Meta description pour moteurs de recherche -->
-    <meta name="description" content="Sebely est une entreprise d’ingénierie basée à Kinshasa, RDC. Nous fournissons des solutions innovantes en énergie, télécommunications, efficacité des ressources et plus encore.">
+<!-- 🔹 Auteur -->
+<meta name="author" content="Sebely SARL">
 
-    <!-- Mots clés -->
-    <meta name="keywords" content="Sebely, Ingénierie RDC, solutions énergétiques, télécommunications, efficacité des ressources, entreprise Congo, bureau d'étude, ingénierie industrielle">
+<!-- 🔹 Canonical URL (pour éviter le contenu dupliqué) -->
+<link rel="canonical" href="https://sebely.com/">
 
-    <!-- Auteur du site -->
-    <meta name="author" content="Sebely">
+<!-- ========================== -->
+<!-- 🌐 META SOCIALES (Open Graph & Twitter Cards) -->
+<!-- ========================== -->
 
-    <!-- Canonical URL pour éviter le contenu dupliqué -->
-    <link rel="canonical" href="https://sebely.com/about">
+<!-- Facebook / LinkedIn / WhatsApp -->
+<meta property="og:title" content="Sebely | Ingénierie, Construction & Gestion des Infrastructures en RDC">
+<meta property="og:description" content="Découvrez Sebely, société d’ingénierie basée à Kinshasa, experte en infrastructures, énergie, data centers et consultance stratégique.">
+<meta property="og:image" content="https://sebely.com/assets/sebely_preview.jpg">
+<meta property="og:url" content="https://sebely.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
 
-    <!-- Feuilles de style -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media_queries.css">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sebely | Ingénierie, Construction & Infrastructures en RDC">
+<meta name="twitter:description" content="Sebely offre des solutions d’ingénierie innovantes : énergie, data centers, fire systems, consultance et maintenance.">
+<meta name="twitter:image" content="https://sebely.com/assets/sebely_preview.jpg">
 
-    <!-- Favicon -->
-    <link rel="icon" href="img/1-ddc61baa.ico" type="image/x-icon">
-
-    <!-- Données structurées JSON-LD (Schema.org) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Sebely",
-      "url": "https://sebely.com",
-      "logo": "https://sebely.com/img/looogo.jpg",
-      "sameAs": [
-        "https://www.facebook.com/sandro.masaki", 
-        "https://www.linkedin.com/company/sebely/"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "8778 Avenue Wagenia",
-        "addressLocality": "Kinshasa",
-        "addressRegion": "Gombe",
-        "postalCode": "243",
-        "addressCountry": "CD"
-      }
-    }
-    </script>
-</head>
-<!-- Google tag (gtag.js) -->
+<!-- ========================== -->
+<!-- 🏢 Données structurées Schema.org -->
+<!-- ========================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sebely",
+  "url": "https://sebely.com",
+  "logo": "https://sebely.com/assets/sebely_logo-removebg-preview.png",
+  "description": "Entreprise d’ingénierie pluridisciplinaire basée à Kinshasa (RDC), spécialisée dans la conception, la construction et la gestion des infrastructures techniques et énergétiques.",
+  "foundingDate": "2020",
+  "founder": {
+    "@type": "Person",
+    "name": "Sebely Engineering Team"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+243840931102",
+    "contactType": "Service client",
+    "areaServed": "CD",
+    "availableLanguage": ["French", "English"]
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Appartement 1302, CTC Tower, 8778 Avenue Wagenia",
+    "addressLocality": "Kinshasa",
+    "addressRegion": "Gombe",
+    "postalCode": "243",
+    "addressCountry": "CD"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/sebely/",
+    "https://www.facebook.com/sandro.masaki"
+  ]
+}
+</script>
+<!-- 📈 Google Analytics -->
+<!-- ========================== -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZN9PQVQWG"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-LZN9PQVQWG');
 </script>
 
+</head>
 <body>
+   <nav>
+      <div class="container nav_container">
+         <a href="#" id="logo"><img src="assets/sebely_logo-removebg-preview.png" alt=""></a>
+         
+         <ul class="nav_menu">
+            <li><a href="index.html" class="nav_col a">Home <i class="fa-solid fa-house"></i></a></li>
+            <li><a href="consultance.html" class="nav_col">Consultance <i class="fa-solid fa-user-tie"></i></a></li>
+            <li><a href="construction.html" class="nav_col ">Construction <i class="fa-solid fa-screwdriver-wrench"></i></a></li>
+            <li><a href="gestion_page.html" class="nav_col">Gestion des infrastructures <i class="fa-solid fa-sitemap"></i></a></li>
+            <li><a href="about.html" class="nav_col active">A propos <i class="fa-solid fa-circle-info"></i></a></li>
+            <li><a href="contact.html" class="nav_col">Contact <i class="fa-solid fa-phone"></i></a></li>
+         </ul>
+         <div class="language-selector">
+             <span class="fi fi-fr" id="fr"></span> | 
+             <span class="fi fi-gb" id="en"></span> 
+         </div>
+         <button id="open-menu-btn">
+            <i class="uil uil-bars"></i>
+         </button>
+         <button id="close-menu-btn">
+            <i class="uil uil-multiply"></i>
+         </button>
+      </div>
+   </nav>
 
-<section id="header">
-    <a href="index.html"><img src="img/looogo.jpg" alt="" class="logo"></a>
-    <div>
-        <ul id="navbar">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="solutions.html">Nos solutions</a></li>
-            <li><a class="active" href="about.html">À propos de nous</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <a href="#" id="close"><i class="far fa-times"></i></a>
-            <li> <span id="span_gen2"><span class="francais active" >FR </span > | <span class="english" > EN</span ></span></li>
-        </ul>
-    </div>
-   <div class="mobile">
-        <span id="span_gen"><span class="francais active"  >FR </span > | <span class="english" > EN</span ></span>
-        <i id="bar" class="fas fa-outdent"></i>
-    </div>
-</section>
+  <header class="about-header">
+    <h1>A propos de nous</h1>
+    <p>Votre Partenaire de Confiance en Ingénierie</p>
+    
+  </header>
 
-<section id="page-header" class="about-header">
-    <h2>À propos de nous</h2>
-    <h4 style="font-family: 'Satisfy', cursive !important;">Apprenez à mieux nous connaître</h4>
-</section>
+  <section class="section_page">
+    <h2><i class="fa-solid fa-users"></i> Qui sommes-nous ?</h2>
+    <p>Fondée en 2020 et basée en République Démocratique du Congo, Sebely est une société d’ingénierie multidisciplinaire, portée par une équipe d’experts passionnés et engagés dans l’excellence. Spécialisée dans les domaines de l’énergie, des télécommunications et de l’efficacité des ressources, Sebely propose des solutions techniques sur mesure, adaptées aux besoins spécifiques de ses clients. Grâce à une connaissance approfondie de son environnement et à une approche rigoureuse, l’entreprise s’impose comme un acteur de référence dans la conception, la mise en œuvre et la gestion d’infrastructures complexes.</p>
 
-<section id="about-head" class="section-p1">
-    <div>
-        <h4>Qui sommes-nous ?</h4>
-        <p>
-            Fondée en 2020 et basée en République Démocratique du Congo, Sebely est une entreprise d'ingénierie pluridisciplinaire dirigée par une équipe d'experts engagés dans l'excellence. Nous sommes spécialisés dans la fourniture de services exceptionnels, adaptés aux besoins spécifiques de nos clients.
-            Notre équipe est composée de professionnels hautement qualifiés, possédant une vaste expérience dans divers secteurs, notamment l’énergie, les télécommunications et l’efficacité des ressources. 
-            Nous nous engageons à proposer des solutions innovantes qui répondent — et dépassent — les attentes de nos clients.
-            Chez Sebely, notre objectif est d'atteindre les plus hauts niveaux de satisfaction client grâce à des solutions innovantes, économiques et efficaces, tout en mettant l'accent sur la durabilité. 
-            Notre mission est de devenir le partenaire privilégié pour les services d’ingénierie dans toute la sous-région.
-        </p>
+  </section>
+  <section class="section_page">
+    <h2><i class="fa-solid fa-eye"></i> Vision de Sebely</h2>
+    <p>Notre vision est de devenir le partenaire de référence en ingénierie dans la sous-région, en apportant des solutions innovantes, durables et à forte valeur ajoutée. Nous aspirons à transformer les défis techniques en opportunités de développement, en contribuant activement à la modernisation des infrastructures et à l’amélioration de la qualité de vie des populations. Chez Sebely, nous croyons en une ingénierie responsable, au service du progrès et de l’impact positif.</p>
 
-        <br><br>
-        <marquee bgcolor="#307a5a" color="white" loop="-1" scrollamount="5" width="100%">
-            Nous fournissons des solutions innovantes qui répondent — et dépassent — les attentes de nos clients.
-        </marquee>
-    </div>
-</section>
+  </section>
+  <section class="section_page">
+    <h2><i class="fa-solid fa-bullseye"></i> Mission de Sebely</h2>
+    <p>La mission de Sebely est de concevoir, réaliser et maintenir des solutions techniques fiables, économiques et durables, en mettant l’accent sur la satisfaction client et l’excellence opérationnelle. Nous nous engageons à accompagner nos partenaires à chaque étape de leurs projets, en leur offrant une expertise locale renforcée par des standards internationaux. À travers nos différentes divisions, dont Sebely Facility Management, nous œuvrons à bâtir des infrastructures performantes, résilientes et adaptées aux enjeux actuels et futurs.</p>
 
-<section id="newsletter" class="section-p1 section-m1">
-    <div class="newstext">
-        <h4>Abonnez-vous à notre newsletter</h4>
-        <p>Recevez des mises à jour par e-mail sur nos <span>services</span>.</p>
-    </div>
-    <form id="newsletterForm" class="form">
-        <input type="email" name="email" placeholder="Votre adresse email" required>
-        <button type="submit" class="normal">S’abonner</button>
-    </form>
-</section>
+  </section>
 
-<footer class="section-p1">
-    <div class="col">
-        <img class="logo" src="img/looogo.jpg" alt="" width="50px" height="50px">
-        <h4>Contact</h4>
-        <p><strong>Adresse :</strong>
-            Appartement 1302, CTC Tower,
-            8778 Rue Wagenia, Gombe, Kinshasa, RDC</p>
-        <p><strong>Téléphone :</strong> +243 840 931 102</p>
-        <p><strong>Heures :</strong> 08h00 - 17h00, Lun - Ven</p>
-        <div class="follow">
-            <h4>Suivez-nous</h4>
-            <div class="icon">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-pinterest"></i>
-                <i class="fab fa-youtube"></i>
+  <footer>
+            <section id="footer">
+
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <li>Adresse:  Bureau 05, Bandudi Tower, 172 avenue Dodoma, Q/Mongala, C/Kinshasa, ville de Kinshasa, RD Congo</li>
+                    <li>+243 840 931 102</li>
+                    <li>Ouvert du Lundi au Vendredi: 08:00 - 17:00, Lun - Ven</li>
+                </div>
+
+                <div class="footer-col">
+                    <h3>A Propos</h3>
+                    <li>Consultance</li>
+                    <li>Construction</li>
+                    <li>Gestion des infrastructures</li>
+                    
+                </div>
+
+                <div class="footer-col">
+                    <h3>News letter</h3>
+                    <p>Inscrivez-vous à notre newsletter</p>
+                    <div class="subscribe">
+                        <input type="text" placeholder="Entrez votre email">
+                        <a href="#" class="yellow">S'ABONNER</a>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                <p class="technoweb">© 2025 Sebely. Tous droits réservés. <br>Développé par <a href="https://wa.me/+27698089022"> Technoweb</a></p>
+
+                <div class="pro-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="col">
-        <h4>À propos</h4>
-        <a href="about.html">Qui sommes-nous</a>
-        <a href="#">Politique de confidentialité</a>
-        <a href="#">Conditions générales</a>
-        <a href="contact.html">Contactez-nous</a>
-    </div>
-    <div class="col install">
-        <h4>Installer l’application</h4>
-        <p>Disponible sur l'App Store et Google Play</p>
-        <div class="row">
-            <img src="img/pay/app.jpg" alt="">
-            <img src="img/pay/play.jpg" alt="">
-        </div>
-    </div>
-    <div class="copyright">
-        <p>&copy; 2025, Sebely. Tous droits réservés.</p>
-        <p>Conçu par <span>TECHNOWEB</span></p>
-    </div>
-</footer>
+            </section>
 
-<script>
-    let slideIndex = 0;
-    showSlides();
+        </footer>
 
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        slides[slideIndex-1].style.display = "block";  
-        setTimeout(showSlides, 4000);
-    }
-</script>
+    </section>
+  <script src="script.js">
+   </script>
+   
 
-<script>
-    const form = document.getElementById('myForm');
-    const newsletterForm = document.getElementById('newsletterForm');
-    const alertBox = document.getElementById('alertBox');
+   
+  <script>
+   let francais = document.getElementById('fr');
+   let english = document.getElementById('en');
 
-    form?.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        const data = {
-            name: form.name.value,
-            email: form.email.value,
-            subject: form.subject.value,
-            message: form.message.value
-        };
-
-        try {
-            const response = await fetch('https://formspree.io/f/xdkebjbl', {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify(data)
-            });
-
-            if (response.ok) {
-                alertBox.textContent = "✅ Message envoyé avec succès !";
-                alertBox.className = "custom-alert";
-                alertBox.style.display = "block";
-                form.reset();
-                setTimeout(() => {
-                    window.location.href = "index.html";
-                }, 2000);
-            } else {
-                throw new Error("Échec de l'envoi");
-            }
-        } catch (error) {
-            alertBox.textContent = "❌ Une erreur s'est produite. Veuillez réessayer.";
-            alertBox.className = "custom-alert error";
-            alertBox.style.display = "block";
-        }
-    });
-
-    newsletterForm.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        const data = { email: newsletterForm.email.value };
-
-        try {
-            const response = await fetch('https://formspree.io/f/xdkebjbl', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(data)
-            });
-
-            if (response.ok) {
-                alert("✅ Merci pour votre abonnement !");
-                newsletterForm.reset();
-            } else {
-                throw new Error("Échec de l'abonnement");
-            }
-        } catch (error) {
-            alert("❌ Erreur d'abonnement. Veuillez réessayer plus tard.");
-        }
-    });
-</script>
-
-<script src="script.js"></script>
+   francais.addEventListener('click', ()=>{
+      window.location.href = "index.html";
+   })
+   english.addEventListener('click', ()=>{
+      window.location.href = "index_en.html";
+   })
+  </script>
 
 </body>
 </html>

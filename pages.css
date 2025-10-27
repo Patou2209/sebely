@@ -3,7 +3,7 @@
       line-height: 1.7;
       margin: 0;
       background-color: #f7f9fc;
-      color: #333;
+      color: var(--color-text);
     }
     /* ==== Animation CSS pour effet fluide ==== */
     .lazy-element {
@@ -18,7 +18,7 @@
     }
      /* ==== Fin Animation CSS pour effet fluide ==== */
      
-    header, .about-header {
+    header {
       height: 60vh;
       padding-left: 25px;
       padding-top: 200px;
@@ -27,15 +27,54 @@
     rgba(255, 255, 255, 0) 0%,     /* en haut (transparent) */
     rgba(29, 26, 26, 0.5) 50%,  /* milieu (un peu noir) */
     rgba(255, 255, 255, 0) 100%    /* en bas (transparent) */
-  ), url(assets/power-lines-532720_1280.jpg) no-repeat center/cover;
+    ), url(img/save.webp) no-repeat center/cover;
       color: var(--color-white);
       text-align: center;
+      
     }
-    header h1, .about-header h1 {
+    header.about-header {
+      background:  linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,     /* en haut (transparent) */
+    rgba(29, 26, 26, 0.5) 50%,  /* milieu (un peu noir) */
+    rgba(255, 255, 255, 0) 100%    /* en bas (transparent) */
+    ), url(assets/sebely_logo-removebg-preview.png) no-repeat center/cover;
+    background-size: contain;
+
+    }
+    header.contact-header {
+      background:  linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,     /* en haut (transparent) */
+    rgba(29, 26, 26, 0.5) 50%,  /* milieu (un peu noir) */
+    rgba(255, 255, 255, 0) 100%    /* en bas (transparent) */
+    ), url(assets/sebely_logo-removebg-preview.png) no-repeat center/cover;
+    background-size: contain;
+
+    }
+    header.consultance-header {
+      background:  linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,     /* en haut (transparent) */
+    rgba(29, 26, 26, 0.5) 50%,  /* milieu (un peu noir) */
+    rgba(255, 255, 255, 0) 100%    /* en bas (transparent) */
+    ), url(img/facility.jpg) no-repeat center/cover;
+
+    }
+    header.construction-header {
+      background:  linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,     /* en haut (transparent) */
+    rgba(29, 26, 26, 0.5) 50%,  /* milieu (un peu noir) */
+    rgba(255, 255, 255, 0) 100%    /* en bas (transparent) */
+  ), url(assets/banner/housing-4459403_1280.jpg) no-repeat center/cover;
+
+    }
+    header h1, .about-header h1, .contact-header h1, .consultance-header h1, .construction-header h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
     }
-    header p, .about-header p {
+    header p, .about-header p, .contact-header p, .consultance-header p, .construction-header p {
       font-size: 1.2em;
       opacity: 0.9;
       text-align: center;
@@ -48,29 +87,23 @@
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-    .about{
-     
-      color: var(--color-text);
-      margin-bottom: 40px;
-      padding: 20px;
-      text-align: justify;
-      height: auto;
-    }
+    
     .section_page ul {
       list-style: square;
     }
+    .section_page p{
+      color: var(--color-text);
+    }
     h2 {
-      color: #004aad;
+      color: var(--color-bg2);
       font-size: 1.2em;
       margin-bottom: 10px;
     }
     h3 {
-      color: #0078d4;
+      color: var(--color-bg2);
       margin-top: 20px;
     }
-    p {
-      margin-bottom: 15px;
-    }
+   
     ul {
       margin: 10px 0 20px 25px;
     }
@@ -82,6 +115,7 @@
     }
     p{
       text-align: justify;
+      margin-bottom: 15px;
     }
     table {
       width: 100%;
@@ -214,7 +248,7 @@
     margin:0;
     font-size: 14px;
    }
-#myForm{
+  #myForm{
       width: 310px;
       margin: 10px auto;
     }
@@ -256,7 +290,7 @@
     width: var(--container-width-md);
 
   }
-  h1 {
+  h1, header h1, .about-header h1, .contact-header h1, .consultance-header h1, .construction-header h1 {
     font-size: 2.2rem;
   }
   h2 {
