@@ -73,7 +73,7 @@
   },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Appartement 1302, CTC Tower, 8778 Avenue Wagenia",
+    "streetAddress": "Bureau 05, Bandudi Tower, 172 avenue Dodoma, Q/Mongala, C/Kinshasa, ville de Kinshasa, RD Congo",
     "addressLocality": "Kinshasa",
     "addressRegion": "Gombe",
     "postalCode": "243",
@@ -171,7 +171,7 @@
 
                 <div class="footer-col">
                     <h3>Contact</h3>
-                    <li>Adresse:  Bureau 05, Bandudi Tower, 172 avenue Dodoma, Q/Mongala, C/Kinshasa, ville de Kinshasa, RD Congo</li>
+                    <li>Adresse:  Bureau 05, Bandudi Tower, 172 avenue Dodoma, <br> Q/Mongala, C/Kinshasa, ville de Kinshasa, RD Congo</li>
                     <li>+243 840 931 102</li>
                     <li>Ouvert du Lundi au Vendredi: 08:00 - 17:00, Lun - Ven</li>
                 </div>
@@ -207,6 +207,18 @@
         </footer>
    <script src="script.js">
    </script>
+
+  <script>
+   let francais = document.getElementById('fr');
+   let english = document.getElementById('en');
+
+   francais.addEventListener('click', ()=>{
+      window.location.href = "contact.html";
+   })
+   english.addEventListener('click', ()=>{
+      window.location.href = "contact_en.html";
+   })
+  </script>
   
 </body>
 </html>
