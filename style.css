@@ -492,6 +492,16 @@ footer .subscribe a.yellow:hover{
   background-color: #FDC93B;
   color: #2c2c2c;
 }
+#loginBtn{
+  background-color: #FDC93B;
+  color: black;
+  transition: background-color 0.3s ease;
+  padding: 10px 15px;
+}
+#loginBtn:hover{
+  background-color: red;
+  color: white;
+}
 #footer .copyright p{
   color: white
 }
